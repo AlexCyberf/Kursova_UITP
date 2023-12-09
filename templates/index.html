@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta content="IE=edge" http-equiv="X-UA-Compatible">
+      <meta name="x-apple-disable-message-reformatting">
+      <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header class="header-banner-top">
+
+    <div class="main-navigation">
+      <input type="checkbox" name="mobile-menu-toggle" id="mobile-menu-toggle" class="mobile-menu-box" />
+      <nav class="horizontal-nav primary-wrapper" role='navigation'>
+        <ul>
+          <li class="active-link"><a href="#">Головна</a></li>
+          <li> <a href="generate">Згенерувати</a></li>
+          <li><a href="about">Про сайт</a></li>
+          <li><a href="contact">Зв'язок з нами</a></li>
+        </ul>
+      </nav>
+      <label for="mobile-menu-toggle" class="mobile-menu-label hidden"></label>
+    </div>
+
+    <div class="banner">
+
+      <div class="banner-image"></div>
+
+      <div class="primary-wrapper">
+
+        <h1 class="site-title"><a href="#">Інтелектуальні Тексти</a></h1>
+        <div class="site-tagline">Написати різноманітні тексти простіше, ніж ти думаєш</div>
+
+      </div>
+
+    </div>
+
+    <div class="content-wrapper">
+        <p class="title_info">Наші переваги</p>
+        <div class="content-section speed">
+          <h2>Швидкість</h2>
+          <img src="https://globalistic.net/wp-content/uploads/2022/03/1-1.webp" alt="Швидкість">
+          <p>Швидкість генерування тексту від нашого сайту максимально велика</p>
+        </div>
+
+        <div class="content-section quality">
+          <h2>Якість</h2>
+          <img src="https://robot.net.ua/upload/medialibrary/70b/Kak-otsenit-kachestvo-novogo-sayta-2.png" alt="Якість">
+          <p>Якість генерування на найвищому рівні. Переконайтесь в цьому!</p>
+        </div>
+
+        <div class="content-section diversity">
+          <h2>Різноманітність</h2>
+          <img src="https://globalquickweb.com/images/design.jpg" alt="Різноманітність">
+          <p>Великий вибір стилів та форматів для генерування </p>
+        </div>
+
+        <p class="title_info">Інструкція</p>
+
+
+        <div class="instructions">
+          <div class="instruction-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="instruction-text">Виберіть цікавий для вас формат тексту</span>
+          </div>
+
+          <div class="instruction-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="instruction-text">Введіть тему для генерування</span>
+          </div>
+
+          <div class="instruction-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="instruction-text">Натискайте кнопку "Згенерувати"</span>
+          </div>
+
+          <div class="instruction-item">
+            <i class="fas fa-check-circle"></i>
+            <span class="instruction-text">Насолоджуйтесь результатом</span>
+          </div>
+
+          <a href="generate" class="try-button">Спробуйте ТУТ</a>
+        </div>
+
+
+  </header>
+</body>
+
+</html>

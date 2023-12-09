@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Реєстрація</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/register.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <p class="login">Реєстрація</p>
+        <form id="registrationForm" method="POST" onsubmit="return validateForm()">
+            <div>
+                <label for="username">Логін:</label>
+                <input type="text" name="username" id="username" required autocomplete="new-password">
+            </div>
+            <div>
+                <label for="password">Пароль:</label>
+                <input type="password" name="password" id="password" required autocomplete="new-password">
+            </div>
+            <div>
+                <label for="confirmPassword">Повторний пароль:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required autocomplete="new-password">
+            </div>
+            <button type="submit">Зареєструватись</button>
+        </form>
+        <div class="flash-messages">
+          {% set last_message = get_flashed_messages()|last %}
+          {% if last_message %}
+              <p class="flash-message"><b>{{ last_message }}</b></p>
+          {% endif %}
+        </div>
+        <p class="register">Уже маєте обліковий запис?<br> <a href="/login">Увійти</a></p>
+    </div>
+</body>
+</html>

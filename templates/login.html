@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Авторизація</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <p class="login">Увідійдіть в ваш обліковий запис</p>
+        <form method="POST">
+            <div>
+                <label for="username">Логін:</label>
+                <input type="text" name="username" required autocomplete="new-password">
+            </div>
+            <div>
+                <label for="password">Пароль:</label>
+                <input type="password" name="password" required autocomplete="new-password">
+            </div>
+            <button type="submit">Увійти</button>
+        </form>
+        <div class="flash-messages">
+          {% set last_message = get_flashed_messages()|last %}
+          {% if last_message %}
+              <p class="flash-message"><b>{{ last_message }}</b></p>
+          {% endif %}
+      </div>
+      <p class="register">Немає облікового запису?<br> <a href="/register">Зареєструватися</a></p>
+    </div>
+</body>
+</html>
