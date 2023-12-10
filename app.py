@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 from gpt_prompts import get_answer_from_gpt
 
 app = Flask(__name__)
-app.secret_key = 
+app.secret_key = 'YOUR_KEY'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['UPLOAD_FOLDER'] = 'datasets'
 
