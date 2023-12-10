@@ -1,6 +1,6 @@
 import openai
 import re
-api_key = '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'
+api_key = 'YOUR_KEY'
 
 
 def get_answer_from_gpt(style, text):
